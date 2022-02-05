@@ -1,8 +1,13 @@
 import React from 'react';
-
+import HeroSection from '../components/HeroSection';
+import Welcome from '../components/Welcome';
 export default function Home() {
+
   return (
-      <h1>Home</h1>
+    <>
+      <Welcome />
+      <HeroSection />
+    </>
   )
 }
 
