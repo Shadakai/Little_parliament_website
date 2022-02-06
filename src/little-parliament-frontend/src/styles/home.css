@@ -1,7 +1,23 @@
+@font-face {
+  font-family: 'ravensara_sansblack';
+  src: url('../assets/Fonts/Ravensara/ravensara-black/ravensara_sans_black-webfont.woff2') format('woff2'),
+       url('../assets/Fonts/Ravensara/ravensara-black/ravensara_sans_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ravensara_sansmedium';
+  src: url('../assets/Fonts/Ravensara/ravensara-medium/ravensara_sans_medium-webfont.woff2') format('woff2'),
+       url('../assets/Fonts/Ravensara/ravensara-medium/ravensara_sans_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/barista.jpg");
-  height: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.5)), url("../assets/beach.jpg");
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,4 +31,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
+  font-size: 3em;
+  font-family: ravensara_sansmedium;
 }
