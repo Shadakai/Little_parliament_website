@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fancy-font: "Ravensara";
+  --brand-green: #769576;
+  --brand-beige: #EEEADE;
+  --brand-grey: #D9D6D3;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--brand-beige);
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

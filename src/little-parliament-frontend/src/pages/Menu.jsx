@@ -1,7 +1,15 @@
 import React from 'react';
+import MenuSelector from '../components/Menu/MenuSelector';
+import '../styles/menu.css'
 
 export default function Menu() {
   return (
-      <h1>Menu</h1>
+      <>
+        {/* Menu Selector */}
+        <MenuSelector />
+        {/* Drinks */}
+        {/* Breakfast */}
+        {/* Lunch */}
+      </>
   )
 }
