@@ -1,3 +1,12 @@
+/* Colours */
+/* 
+Green - 769576
+Grey - D9D6D3
+Beige - EEEADE
+*/
+
+/* Fonts */
+
 @font-face {
   font-family: 'ravensara_sansblack';
   src: url('../assets/Fonts/Ravensara/ravensara-black/ravensara_sans_black-webfont.woff2') format('woff2'),
@@ -15,8 +24,20 @@
 
 }
 
+/* Hero image section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEEADE;
+}
+
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.5)), url("../assets/beach.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/beach.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,4 +54,89 @@
   color: rgb(0, 0, 0);
   font-size: 3em;
   font-family: ravensara_sansmedium;
+}
+
+/* Hero containers */
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+
+.column {
+  padding: 4em;
+  width: 50%;
+}
+
+.title {
+  color: black;
+  font-size: 3em;
+  margin-bottom: .5em;
+  letter-spacing: 1.5px;
+}
+
+.info {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.right-align {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  background-color: transparent;
+  background-image: linear-gradient(#769576, #769576);
+  background-position: bottom center; /*Adjust the background-position to move the line*/
+  background-size: 80% 3px; /*Adjust the background size to control length and height*/
+  background-repeat: no-repeat;
+  padding-bottom: 4px;
+  margin: 1em;
+}
+
+/* images */
+
+.welcome-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/sitting.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.coffee-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/coffee.jpeg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.food-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/burger.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.our-store-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/product.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
