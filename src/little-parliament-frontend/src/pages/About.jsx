@@ -1,4 +1,5 @@
 import React from 'react';
+import SplitLayout from '../components/SplitLayout';
 
 export default function About() {
   const about_details = [
@@ -6,7 +7,7 @@ export default function About() {
       title: "Our Story",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto pariatur quas nostrum aspernatur molestias, magni nulla in ea natus vel a doloremque? At delectus cumque nisi dolores molestiae omnis architecto!",
       image: {
-        src: 'https://little-parliament-website.s3.ap-southeast-2.amazonaws.com/sign1.PNG',
+        src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/sign1.PNG',
         alt: "Little Parliament Sign",
       }
     },
@@ -14,7 +15,7 @@ export default function About() {
       title: "Location",
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
       image: {
-        src: 'https://little-parliament-website.s3.ap-southeast-2.amazonaws.com/Capture.PNG',
+        src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/Capture.PNG',
         alt: "Little Parliament Location"
       }
     },
@@ -22,7 +23,7 @@ export default function About() {
       title: 'Coffee',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
       image: {
-        src: 'https://little-parliament-website.s3.ap-southeast-2.amazonaws.com/coffee.PNG',
+        src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/coffee.PNG',
         alt: "Coffee"
       }
     },
@@ -30,7 +31,7 @@ export default function About() {
       title: 'Food',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
       image: {
-        src: 'https://little-parliament-website.s3.ap-southeast-2.amazonaws.com/food.PNG',
+        src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/food.PNG',
         alt: "Vegan Cheesecake"
       }
     },
@@ -38,26 +39,21 @@ export default function About() {
       title: 'Souvenirs',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
       image: {
-        src: 'https://little-parliament-website.s3.ap-southeast-2.amazonaws.com/products.PNG',
+        src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/products.PNG',
         alt: "Products"
       }
     },
   ]
 
   const details = about_details.map((detail, index) => {
-    const {title, description, image} = detail;
-    return <div key={index}>
-      <div>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
-      <img src={image.src} alt={image.alt} />
-    </div>
+    return (
+      <SplitLayout details={detail} reverse={index % 2 != 0 ? true : false} key={index}/>
+    )
   })
 
   return (
-    <>
-    {details}
-    </>
+    <div className='container about'>
+      {details}
+    </div>
   )
 }
