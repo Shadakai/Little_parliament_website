@@ -1,6 +1,6 @@
 export default function CodffeeSection(props) {
     return (
-        <div className="section container mx-auto columns-2 px-4">
+        <div className="section reverse">
             <div className="column">
                 <div className="coffee-image"></div>
             </div>

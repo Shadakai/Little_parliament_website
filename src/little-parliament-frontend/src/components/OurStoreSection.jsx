@@ -1,6 +1,6 @@
 export default function OurStoreSection() {
     return (
-        <div className="section container mx-auto columns-2 px-4">
+        <div className="section reverse">
             <div className="column">
                 <div className="our-store-image"></div>
             </div>

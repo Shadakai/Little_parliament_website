@@ -2,7 +2,7 @@
 export default function Welcome() {
     return (
         <div className="hero-image">
-            <div class="hero-text">
+            <div className="hero-text">
                 <h1>LITTLE PARLIAMENT</h1>
             </div>
         </div>
