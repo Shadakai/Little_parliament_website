@@ -8,6 +8,7 @@ export default function Menu() {
         {/* Menu Selector */}
         <MenuSelector />
         {/* Drinks */}
+        {/* Cabinet */}
         {/* Breakfast */}
         {/* Lunch */}
       </>
