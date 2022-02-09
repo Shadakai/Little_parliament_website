@@ -1,13 +1,18 @@
+.nav-container {
+    display: none;
+}
+
 @media only screen and (min-width: 991px) {
     .nav-container {
+        display: block;
         width: 100%;
         background-color: var(--white);
-        border-bottom: 2px var(--brand-green) solid;
     }
     .nav {
         display: flex;
         align-items: center;
         padding: 2rem;
+        max-width: calc(1248px + (var(--padding ) * 2));
     }
     .nav__title {
         font-family: var(--fancy-font);

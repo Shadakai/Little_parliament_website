@@ -49,7 +49,7 @@
         flex-direction: row;
     }
     .split-layout__image {
-        min-width: 50%;
+        width: 50%;
     }
 }
 

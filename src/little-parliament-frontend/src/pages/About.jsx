@@ -1,5 +1,7 @@
 import React from 'react';
 import SplitLayout from '../components/SplitLayout';
+import HeroSection from '../components/HeroSection'
+import Video from '../assets/video.mp4'
 
 export default function About() {
   const about_details = [
@@ -45,6 +47,15 @@ export default function About() {
     },
   ]
 
+  const heroDetails = {
+    title: 'Our Story',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto sed, consectetur commodi quidem omnis? Repudiandae consectetur laborum quos numquam?',
+    media: {
+      type: 'video',
+      src: Video
+    }
+  }
+
   const details = about_details.map((detail, index) => {
     return (
       <SplitLayout details={detail} reverse={index % 2 != 0 ? true : false} key={index}/>
@@ -53,6 +64,7 @@ export default function About() {
 
   return (
     <div className='container about'>
+      <HeroSection details={heroDetails} />
       {details}
     </div>
   )
