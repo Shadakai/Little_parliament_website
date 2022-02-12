@@ -1,6 +1,6 @@
 import React from 'react';
-import { AiOutlineMenu } from './react-icons/ai'
-import { IoMdClose } from './react-icons/io'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { IoMdClose } from 'react-icons/io'
 
 export default function NavIcon(props) {
     const { openState } = props
