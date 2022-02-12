@@ -10,7 +10,7 @@ const menuItems = [
 export default function LunchDisplay() {
     return (
         <>
-        <h1> Lunch </h1>
+        <h1 id="lunch"> Lunch </h1>
          <Grid className="display" container justify="center" spacing={4}>
             {menuItems.map((item) => (
                 <Grid item key={item.id} xd={12} sm={6} md={4} lg={3}>

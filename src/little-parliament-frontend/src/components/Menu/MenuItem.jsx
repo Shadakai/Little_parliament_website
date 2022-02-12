@@ -13,6 +13,7 @@ export default function MenuItem( {item} ) {
                 <Typography gutterBottom variant="h5" component="h2">
                     ${item.price}
                 </Typography>
+                <hr className="solid" />
              </div>
              <Typography dangerouslySetInnerHTML={{ __html: item.description}} variant="body2" color="textSecondary" component="p" />
       </CardContent>

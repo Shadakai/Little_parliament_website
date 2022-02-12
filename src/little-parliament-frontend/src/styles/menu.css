@@ -34,6 +34,14 @@
     align-items: center;
     font-family: var(--fancy-font);
     border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: box-shadow .3s;
+}
+
+.selector:hover {
+  box-shadow: 0 5px 11px var(--brand-green);
+  color: black;
 }
 
 @media only screen and (max-width: 400px) {
@@ -48,6 +56,8 @@
     min-width: calc(90%)
   }
 }
+
+
 
 .drink {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url("../assets/coffee.jpeg");
@@ -103,5 +113,8 @@ h1 {
 
 .item-image {
   height: 200px;
-  
+}
+
+hr.solid {
+  border-top: 2px solid var(--brand-green);
 }
