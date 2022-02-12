@@ -51,3 +51,9 @@ li {
   line-height: 1;
   color: var(--black);
 }
+
+.adminpanel {
+  width: 5px;
+  height: 5px;
+  padding-right: 10px;
+}
