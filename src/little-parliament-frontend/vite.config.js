@@ -5,9 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     build: {
     rollupOptions: {
-      external: ['@mui'],
-      external: ['@mui/material/grid'],
-      external: ['mui'],
+      external: ['@mui','@mui/material/grid'],
       }
   },
   plugins: [react()]
