@@ -19,23 +19,28 @@
         display: flex;
         align-items: center;
     }
-    .nav__title {
-        font-family: var(--fancy-font);
+
+    .nav .nav__title {
         margin-right: 2rem;
     }
+
     .nav__links {
         display: flex;
     }
+
     .nav__link {
         text-transform: uppercase;
         font-weight: bold;
     }
+
     .nav__link a {
         color: var(--black);
     }
+
     .nav__link + .nav__link {
         margin-left: 2rem;
     }
+    
     .nav__logo {
         margin-right: 2rem;
         height: 4rem;

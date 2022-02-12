@@ -17,21 +17,17 @@ export const routeDetails = [
         path: '/products',
         title: 'Products'
     },
-    {
-        path: '/Cart',
-        title: 'Cart'
-    },
 ]
 
 export const socialLinkDetails = [
     {
         title: 'Instagram',
         icon: <FaInstagram />,
-        url: '/'
+        url: 'https://www.instagram.com/littleparliament'
     },
     {
         title: 'Facebook',
         icon: <FaFacebook />,
-        url: '/'
+        url: 'https://www.facebook.com/littleparliamentcafe'
     },
 ]

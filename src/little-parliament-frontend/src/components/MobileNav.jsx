@@ -21,9 +21,9 @@ export default function MobileNav() {
                 <div className="mobile-nav-icon-container" onClick={() => setOpen(!open)}>
                     <Icon openState={open} />
                 </div>
-                <h2 className="mobile-nav-title">
+                <Link to="/" className="nav__title">
                     Little Parliament
-                </h2>
+                </Link>
                 <SocialLinks details={socialLinkDetails}/>
             </div>
             <nav className={open ? 'mobile-nav open' : 'mobile-nav close'}>

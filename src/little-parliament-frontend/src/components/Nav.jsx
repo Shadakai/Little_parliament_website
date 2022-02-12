@@ -15,7 +15,7 @@ export default function Nav() {
         <div className="nav-container">
             <nav className='container nav'>
                 <div className="nav-content">
-                    <h2 className="nav__title">Little Parliament</h2>
+                    <Link to="/" className="nav__title">Little Parliament</Link>
                     <ul className='nav__links'>
                         {routes}
                     </ul>

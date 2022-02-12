@@ -44,3 +44,11 @@ li {
   margin: 0 auto;
 }
 
+.nav__title {
+  font-family: var(--fancy-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--black);
+}
+

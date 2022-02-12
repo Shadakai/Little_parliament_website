@@ -20,11 +20,6 @@
     transition: ease-in-out;
 }
 
-.mobile-nav-title {
-    font-family: var(--fancy-font);
-    line-height: 1;
-}
-
 .mobile-nav {
     position: absolute;
     top: 3.25rem;

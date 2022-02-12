@@ -1,0 +1,30 @@
+.footer-container {
+    width: 100%;
+    background-color: var(--white);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    max-width: calc(1248px + (var(--padding ) * 2));
+}
+
+.footer__image {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+}
+
+.footer .social-links {
+    margin-bottom: 0.5rem;
+}
+
+.footer__address {
+    margin-bottom: 0.5rem;
+}
+
+.footer__copyright{
+    color: var(--brand-light-grey);
+}

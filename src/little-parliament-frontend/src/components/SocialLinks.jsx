@@ -3,10 +3,9 @@ import "../styles/components/SocialLinks.css"
 
 export default function SocialLinks(props) {
     const { details, title } = props
-    console.log(props)
     const socialLinks = details.map((link, index) =>
         <li className="social-link" key={index}>
-            <a href={link.url}>
+            <a href={link.url} target="__blank">
                 <div className="social-link-content">
                     <i className="social-link-icon">{link.icon}</i>
                     {title ? <h4 className="social-link-title">{link.title}</h4> : null}
