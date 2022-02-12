@@ -1,7 +1,10 @@
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@mui/material';
+import { Link } from "react-router-dom"
 
 export default function MenuItem( {item} ) {
+    const link = "/menu/" + item.id
     return (
+        <Link to={{ pathname:  link }} state={{item}} >
         <div className="item">
         <Card >
             <CardMedia className="item-image" image={item.image} title={item.name} />
@@ -18,5 +21,6 @@ export default function MenuItem( {item} ) {
       </CardContent>
     </Card>
     </div>
+    </Link>
   );
 };
