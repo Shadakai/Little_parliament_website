@@ -10,7 +10,7 @@ export default function Footer() {
             <img src="https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/Circle+Logo+Green+on+Transparent+Background.png" alt="Little Parliament" className='footer__image'/>
             <div className="footer__content">
                 <SocialLinks details={socialLinkDetails}/>
-                <p className="footer__address">Adress: 12 Rainbow Beach Rd<br/>Rainbow Beach</p>
+                <p className="footer__address">Address: 12 Rainbow Beach Rd<br/>Rainbow Beach</p>
                 <small className="footer__copyright">&#169; Little Parliament</small>
             </div>
         </footer>

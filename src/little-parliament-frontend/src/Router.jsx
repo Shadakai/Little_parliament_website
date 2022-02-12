@@ -6,8 +6,6 @@ import Menu from "./pages/Menu"
 import MenuItem from "./pages/MenuItem"
 import Products from "./pages/Products"
 import ProductItem from "./pages/ProductItem"
-import Checkout from "./pages/Checkout"
-import Cart from "./pages/Cart"
 import Admin from "./pages/Admin"
 
 function Router() {
@@ -42,16 +40,6 @@ function Router() {
       path: '/products/:id',
       element: <ProductItem />,
       exact_path: true,
-    },
-    {
-      path: '/checkout',
-      element: <Checkout />,
-      exact_path: false,
-    },
-    {
-      path: '/cart',
-      element: <Cart />,
-      exact_path: false,
     },
     {
       path: '/admin',
