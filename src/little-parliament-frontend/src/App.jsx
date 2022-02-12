@@ -1,16 +1,18 @@
 import './styles/index.css'
 import { BrowserRouter } from "react-router-dom"
 import Nav from "./components/Nav"
+import MobileNav from "./components/MobileNav"
 import Router from "./Router"
+import Footer from './components/Footer'
 
 
 function App() {
-
   return (
     <BrowserRouter>
-        <h1>Little Parliament</h1>
-        <Nav />
-        <Router />
+      <Nav />
+      <MobileNav />
+      <Router />
+      <Footer />
     </BrowserRouter>
   )
 }

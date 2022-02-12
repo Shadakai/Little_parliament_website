@@ -3,7 +3,6 @@ import '../styles/components/SplitLayout.css'
 
 export default function SplitLayout(props) {
     const { title, description, image } = props.details 
-    {console.log(props)}
     return (
        
         <div className={`container split-layout ${props.reverse ? 'split-layout__reverse' : ''}`}>
