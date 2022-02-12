@@ -1,4 +1,4 @@
-import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from './@mui/material';
+import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@mui/material';
 
 export default function MenuItem( {item} ) {
     return (
