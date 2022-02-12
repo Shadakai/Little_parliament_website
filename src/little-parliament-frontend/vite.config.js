@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    build: {
-    rollupOptions: {
-      external: ['@mui','@mui/material/grid'],
-      }
-  },
+  //   build: {
+  //   rollupOptions: {
+  //     external: ['@mui','@mui/material/grid'],
+  //     }
+  // },
   plugins: [react()]
 })
