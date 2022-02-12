@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/index.css'
 import { BrowserRouter } from "react-router-dom"
 import Nav from "./components/Nav"
 import MobileNav from "./components/MobileNav"
