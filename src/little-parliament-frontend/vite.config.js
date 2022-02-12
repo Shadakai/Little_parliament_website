@@ -6,6 +6,8 @@ export default defineConfig({
     build: {
     rollupOptions: {
       external: ['@mui'],
+      external: ['@mui/material'],
+      external: ['mui'],
       }
   },
   plugins: [react()]
