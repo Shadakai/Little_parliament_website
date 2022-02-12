@@ -1,5 +1,5 @@
 import MenuItem from "./MenuItem"
-import Grid from '@mui/material/grid'
+import Grid from './@mui/material/grid'
 
 const menuItems = [
     { id: 1, name: 'Fish tacos', description: 'Smashed avo on a deliscious Sourdough toast', price: 12, image: 'https://picsum.photos/300' },
