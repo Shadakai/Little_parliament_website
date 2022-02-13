@@ -5,17 +5,15 @@ import "../styles/Products.css"
 import HeroSection from "../components/HeroSection"
 
 export default function Products() {
-  const [loading, setLoading] = useState(true)
   const [productData, setProductData] = useState([])
   useEffect(async() => {
     const response = await fetch('https://gentle-fortress-16563.herokuapp.com/products')
-    if(response.status === 200) setLoading(false)
     const result = await response.json()
     setProductData(result)
   }, [])
 
   const products = productData.map((product, index) => {
-    return <CardComponent  details={product.product} loading={loading} key={index}/> 
+    return <CardComponent details={product.product} key={index}/> 
   })
 
   const heroDetails = {
@@ -28,7 +26,9 @@ export default function Products() {
   return (
       <div className="container products">
         <HeroSection details={heroDetails}/>
-        {products}
+        <div className="products__content">
+          {products}
+        </div>
       </div>
   )
 }
