@@ -7,6 +7,7 @@ import MenuItem from "./pages/MenuItem"
 import Products from "./pages/Products"
 import ProductItem from "./pages/ProductItem"
 import Admin from "./pages/Admin"
+import AdminPanel from "./pages/AdminPanel"
 
 function Router() {
   const route_details = [
@@ -44,6 +45,11 @@ function Router() {
       path: '/admin',
       element: <Admin />,
       exact_path: false,
+    },
+    {
+       path: '/adminPanel',
+       element: <AdminPanel />,
+       exact_path: false,
     },
     {
       path: "/*",
