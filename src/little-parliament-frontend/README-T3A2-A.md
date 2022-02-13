@@ -435,25 +435,21 @@ Menu item detail page added, products added, footer added
 
 ### Sam Lester
 
-"Looks good! The menu seems a bit boring, also theres a lot to scroll through which kinda sucks"
+"The words look a little squished on the product screen"
 
 ### Tanya Armstrong
 
-"Amazing job!"
+"Theres a lot of white space in the mobile version of mobile. Is this done on purpose?"
 
 ### Sean Robinson
 
-"Hey Axel, Just finished testing the website, everything looks good  I've just noticed that the navbar goes off the screen when I use it on my phone. I think this happens for most of the home page."
+"Hey Axel, Just finished testing the website. The buttons on the index page dont work??"
 
 ### Logan John
 
-"Looks good mate, the photos on the menu dont look that appetizing though"
-
-### Brianna Wait 
-
-"I love it!"
+"Looks good"
 
 ### Carly Ladas(Client)
 
-"Hello Axel! 
-Just tested the website. Noticed the index page is a bit wonky on the mobile. And I'm not a huge fan of the green your using, I'll send through hex values for the one we use. But besides that everything looks great "
+"Hello Axel, Thanks for doing this for me. I've had play with it and theres a few things that I would love if they got fixed. The buttons on the home screen dont actually do anything... 
+

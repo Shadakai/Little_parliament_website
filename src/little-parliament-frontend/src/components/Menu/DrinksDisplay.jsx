@@ -16,7 +16,7 @@ export default function DrinkDisplay() {
     }, [url])
     return (
         <>
-        <h1> Drinks </h1>
+        <h1 id="drink"> Drinks </h1>
          <Grid className="display" container justify="center" spacing={4}>
             {items.map((item) => (
                 <Grid item justify="center" key={item.id} xd={12} sm={6} md={4} lg={3}>
