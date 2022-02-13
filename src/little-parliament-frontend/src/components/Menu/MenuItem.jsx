@@ -2,6 +2,7 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import { Link } from "react-router-dom"
 
 export default function MenuItem( {item} ) {
+    // Dynamically populate a menuite card, and have it link to the menu/:id page
     const link = "/menu/" + item.id
     return (
         <Link to={{ pathname:  link }} state={{item}} >

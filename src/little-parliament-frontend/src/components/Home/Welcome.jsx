@@ -1,5 +1,6 @@
 
 export default function Welcome() {
+    // Big hero images
     return (
         <div className="hero-image">
             <div className="hero-text">

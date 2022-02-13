@@ -1,4 +1,5 @@
 export default function CodffeeSection(props) {
+    // Section on index that talks about coffee
     return (
         <div className="section reverse">
             <div className="column">
