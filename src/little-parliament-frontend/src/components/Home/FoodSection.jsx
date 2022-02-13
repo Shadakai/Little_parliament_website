@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 export default function FoodSection(props) {
+    // Section on index that talks about food
     return (
         <div className="section">
             <div className="column">

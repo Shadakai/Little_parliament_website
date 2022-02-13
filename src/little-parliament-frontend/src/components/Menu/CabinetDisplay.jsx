@@ -4,6 +4,7 @@ import { useState, useEffect} from 'react'
 import { Grid } from '@mui/material'
 
 export default function CabinetDisplay() {
+    // Axios grabbing data from the backend and populating the menu items
     const url = 'https://gentle-fortress-16563.herokuapp.com/foods.json'
     const [items, setItem] = useState([])
     useEffect(() => {

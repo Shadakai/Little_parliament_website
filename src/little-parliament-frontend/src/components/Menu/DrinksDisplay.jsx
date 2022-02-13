@@ -3,9 +3,8 @@ import axios from 'axios'
 import { useState, useEffect} from 'react'
 import { Grid } from '@mui/material'
 
-
-
 export default function DrinkDisplay() {
+    // Axios grabbing data from the backend and populating the menu items
     const url = 'https://gentle-fortress-16563.herokuapp.com/drinks.json'
     const [items, setItem] = useState([])
     useEffect(() => {

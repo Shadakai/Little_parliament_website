@@ -7,6 +7,7 @@ import axios from 'axios'
 import "../styles/admin.css"
 
 export default function Admin() {
+  // handle the pages state
    const userRef = useRef();
    let history = useNavigate();
    const { setAuth } = useContext(AuthContext);
@@ -17,7 +18,7 @@ export default function Admin() {
    useEffect(() => {
      userRef.current.focus();
    }, [])
-
+  // handle logging in admin and sending the to that page 
    const handleSubmit = async (e) => {
      e.preventDefault();
      try {

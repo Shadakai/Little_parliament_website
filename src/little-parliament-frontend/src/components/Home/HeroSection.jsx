@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 export default function HeroSection(props) {
+    // Section on index that talks about Little Parliament in general
     return (
         <div className="section">
             <div className="column">

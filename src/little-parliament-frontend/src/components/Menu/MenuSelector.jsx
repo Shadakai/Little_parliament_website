@@ -1,6 +1,7 @@
 export default function MenuSelector() {
 
     return (
+        //  Widget that shows quick nav options and lets you jump to them when you clickem
         <>
         <div className="menu-selector"> 
             <a className="drink selector" href="#drink">DRINKS</a>

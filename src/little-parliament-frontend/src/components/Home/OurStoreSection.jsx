@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 export default function OurStoreSection() {
+    // Section on index that talks about OurStore the products shop of LP
     return (
         <div className="section reverse">
             <div className="column">
