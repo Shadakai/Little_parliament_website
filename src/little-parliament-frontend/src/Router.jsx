@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useNavigate } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Menu from "./pages/Menu"
@@ -9,7 +9,6 @@ import ProductItem from "./pages/ProductItem"
 import Admin from "./pages/Admin"
 
 function Router() {
-  const Navigate = useNavigate()
   const route_details = [
     {
       path: '/',
@@ -48,7 +47,7 @@ function Router() {
     },
     {
       path: "/*",
-      element: <Navigate to="/" />,
+      element: <Home />,
       exact_path: false,
     }
   ]
