@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useNavigate } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Menu from "./pages/Menu"
@@ -10,7 +10,7 @@ import Admin from "./pages/Admin"
 import AdminPanel from "./pages/AdminPanel"
 
 function Router() {
-
+  const Navigate = useNavigate()
   const route_details = [
     {
       path: '/',
@@ -48,18 +48,23 @@ function Router() {
       exact_path: false,
     },
     {
-      path: '/adminPanel',
-      element: <AdminPanel />,
+       path: '/adminPanel',
+       element: <AdminPanel />,
+       exact_path: false,
+    },
+    {
+      path: "/*",
+      element: <Navigate to="/" />,
       exact_path: false,
     }
   ]
 
   const routes = route_details.map((route, index) =>
-    route.exact_path ? <Route exact path={route.path} element={route.element} key={index}/> : <Route path={route.path} element={route.element} key={index}/>
+    route.exact_path ? <Route exact path={route.path} element={route.element} key={index} /> : <Route path={route.path} element={route.element} key={index} />
   )
   return (
     <Routes>
-       {routes}
+      {routes}
     </Routes>
   )
 }
