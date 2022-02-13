@@ -44,12 +44,12 @@
   color: black;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 540px) {
   .menu-selector {
     height: 200vh;
     justify-content: center;
     align-content: flex-start;
-    margin-bottom: 200px;
+    margin-bottom: 600px;
   }
   .selector {
     height: 25%;
@@ -118,3 +118,20 @@ h1 {
 hr.solid {
   border-top: 2px solid var(--brand-green);
 }
+
+/* detailed section */
+
+.itemDetail {
+  height: 100vh;
+  margin: 1em;
+}
+
+.itemImage {
+  height: 50vh;
+}
+
+.itemTitle {  
+  font-family: var(--fancy-font);
+  font-size: 4em;
+}
+

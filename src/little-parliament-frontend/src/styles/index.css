@@ -52,3 +52,22 @@ li {
   color: var(--black);
 }
 
+.adminpanel {
+  width: 5px;
+  height: 5px;
+  padding-right: 10px;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--brand-green);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 1000px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}

@@ -1,13 +1,17 @@
 import MenuItem from "./MenuItem"
+import axios from 'axios'
+import { useState, useEffect} from 'react'
 import { Grid } from '@mui/material'
 
-const menuItems = [
-    { id: 1, name: 'Fish tacos', description: 'Smashed avo on a deliscious Sourdough toast', price: 12, image: 'https://picsum.photos/300' },
-    { id: 2, name: 'Bacon and bacon and bacon', description: 'Smashed avo on a deliscious Sourdough toast', price: 13, image: 'https://picsum.photos/301' },
-    { id: 3, name: 'Steak', description: 'Smashed avo on a deliscious Sourdough toast', price: 16, image: 'https://picsum.photos/302' },
-]
-
 export default function LunchDisplay() {
+    const url = 'https://gentle-fortress-16563.herokuapp.com/foods.json'
+    const [items, setItem] = useState([])
+    useEffect(() => {
+        axios.get(url)
+            .then(response => {
+                setItem(response.data)
+        })  
+    }, [url])
     return (
         <>
         <h1 id="lunch"> Lunch </h1>

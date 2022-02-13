@@ -7,9 +7,9 @@ import MenuItem from "./pages/MenuItem"
 import Products from "./pages/Products"
 import ProductItem from "./pages/ProductItem"
 import Admin from "./pages/Admin"
+import AdminPanel from "./pages/AdminPanel"
 
 function Router() {
-
   const route_details = [
     {
       path: '/',
@@ -46,14 +46,24 @@ function Router() {
       element: <Admin />,
       exact_path: false,
     },
+    {
+       path: '/adminPanel',
+       element: <AdminPanel />,
+       exact_path: false,
+    },
+    {
+      path: "/*",
+      element: <Home />,
+      exact_path: false,
+    }
   ]
 
   const routes = route_details.map((route, index) =>
-    route.exact_path ? <Route exact path={route.path} element={route.element} key={index}/> : <Route path={route.path} element={route.element} key={index}/>
+    route.exact_path ? <Route exact path={route.path} element={route.element} key={index} /> : <Route path={route.path} element={route.element} key={index} />
   )
   return (
     <Routes>
-       {routes}
+      {routes}
     </Routes>
   )
 }
