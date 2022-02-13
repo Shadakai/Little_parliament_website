@@ -15,7 +15,7 @@ export const routeDetails = [
     },
     {
         path: '/products',
-        title: 'Products'
+        title: 'Our Store'
     },
 ]
 

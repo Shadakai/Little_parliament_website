@@ -7,8 +7,8 @@ export default function HeroSection(props) {
     return (
         <div className="container hero-container">
             <div className="hero__content">
-                <h2 className="hero__title">{title}</h2>
-                <p className="hero__description">{description}</p>
+                <h2 className="hero__title">{title ? title : null}</h2>
+                <p className="hero__description">{description ? description : null}</p>
             </div>
             {mediaElement}
         </div>
