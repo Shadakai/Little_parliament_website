@@ -49,7 +49,7 @@ export default function About() {
 
   const heroDetails = {
     title: 'Our Story',
-    description: "Crammed in the back of an old taxi, marlborough red fumes taint the humid sea air as we wind through the narrow backstreets of crete in the Greek Islands. 'Where the hell is he taking us?' Curiosity, hunger and a serious hankering for an iced glass of pine tree resin wine quickly overcame any fear or apprehension. Finally, we arrive. Small tables cloaked in blue and white checkered tablecloths fill the town square. Every seat occupied. The hum of conversation floods our ears as the locals - cigaretter in one hand, coffee in the other - talk politics, gossip and exchange the odd dirty joke. Fresh, simple, seasonal food comes out in piecemeal. No rush. 'What is this place' Micri Voulee. Translated into Micro Parliament. And so our spin on this slice of paradise was born; Little Parliament",
+    description: " ",
     media: {
       type: 'video',
       src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/about_us_hero.mp4'
