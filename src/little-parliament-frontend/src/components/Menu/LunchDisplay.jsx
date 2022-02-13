@@ -5,7 +5,7 @@ import { Grid } from '@mui/material'
 
 export default function LunchDisplay() {
     const url = 'https://gentle-fortress-16563.herokuapp.com/foods.json'
-    const [item, setItem] = useState([])
+    const [items, setItem] = useState([])
     useEffect(() => {
         axios.get(url)
             .then(response => {
@@ -16,7 +16,7 @@ export default function LunchDisplay() {
         <>
             <h1> Lunch </h1>
             <Grid className="display" container justify="center" spacing={4}>
-                {item.map((item) => (
+                {items.map((item) => (
                     <Grid item justify="center" key={item.id} xd={12} sm={6} md={4} lg={3}>
                         <MenuItem item={item} />
                     </Grid>
