@@ -16,6 +16,10 @@
 
 }
 
+Link {
+  text-decoration: none;
+}
+
 /* Hero image section */
 
 .hero-image {
