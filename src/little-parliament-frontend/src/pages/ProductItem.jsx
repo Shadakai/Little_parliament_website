@@ -17,7 +17,9 @@ export default function ProductItem() {
   return (
     <div className="container product">
       <SplitLayout details={productDetails} />
-      <Link to={`/products`} className="btn-primary">Back to products</Link>
+      <div className="container product__btn-container">
+        <Link to={`/products`} className="btn-primary">Back to products</Link>
+      </div>
     </div>
   )
 }

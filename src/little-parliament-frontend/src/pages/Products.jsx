@@ -26,7 +26,9 @@ export default function Products() {
   return (
       <div className="container products">
         <HeroSection details={heroDetails}/>
-        {products}
+        <div className="products__content">
+          {products}
+        </div>
       </div>
   )
 }
