@@ -7,6 +7,7 @@ import MenuItem from "./pages/MenuItem"
 import Products from "./pages/Products"
 import ProductItem from "./pages/ProductItem"
 import Admin from "./pages/Admin"
+import AdminPanel from "./pages/AdminPanel"
 
 function Router() {
 
@@ -46,6 +47,11 @@ function Router() {
       element: <Admin />,
       exact_path: false,
     },
+    {
+      path: '/adminPanel',
+      element: <AdminPanel />,
+      exact_path: false,
+    }
   ]
 
   const routes = route_details.map((route, index) =>

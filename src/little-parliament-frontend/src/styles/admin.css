@@ -39,3 +39,9 @@ button:hover {
 input:focus {
     outline: var(--brand-green)
 }
+
+/* Admin Panel */
+
+.adminpanel {
+  flex: 4;
+}
