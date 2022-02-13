@@ -1,5 +1,6 @@
 import React from 'react';
 import SplitLayout from '../components/SplitLayout';
+import HeroSection from '../components/HeroSection'
 
 export default function About() {
   const about_details = [
@@ -45,14 +46,24 @@ export default function About() {
     },
   ]
 
+  const heroDetails = {
+    title: 'Our Story',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto sed, consectetur commodi quidem omnis? Repudiandae consectetur laborum quos numquam?',
+    media: {
+      type: 'video',
+      src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/about_us_hero.mp4'
+    }
+  }
+
   const details = about_details.map((detail, index) => {
     return (
-      <SplitLayout details={detail} reverse={index % 2 != 0 ? true : false} key={index}/>
+      <SplitLayout details={detail} reverse={index % 2 != 0 ? true : false} key={index} />
     )
   })
 
   return (
     <div className='container about'>
+      <HeroSection details={heroDetails} />
       {details}
     </div>
   )

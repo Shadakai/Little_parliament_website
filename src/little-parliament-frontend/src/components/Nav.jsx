@@ -1,36 +1,28 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import '../styles/components/Nav.css'
+import { routeDetails, socialLinkDetails } from '../utilities/RouteDetails'
+import SocialLinks from "./SocialLinks"
 
 export default function Nav() {
-    const route_details = [
-        {
-            path: '/',
-            title: 'Home'
-        },
-        {
-            path: '/about',
-            title: 'About'
-        },
-        {
-            path: '/menu',
-            title: 'Menu'
-        },
-        {
-            path: '/products',
-            title: 'Products'
-        },
-        {
-            path: '/Cart',
-            title: 'Cart'
-        },
-    ]
-
-    const routes = route_details.map((route, index) =>
-        <Link to={route.path} key={index}>{route.title}</Link>
+    const routes = routeDetails.map((route, index) =>
+        <li className="nav__link" key={index}>
+            <Link to={route.path}>{route.title}</Link>
+        </li>
     )
+
     return (
-        <nav>
-            {routes}
-        </nav>
+        <div className="nav-container">
+            <nav className='container nav'>
+                <div className="nav-content">
+                    <Link to="/admin"><div className="adminpanel"/></Link>
+                    <Link to="/" className="nav__title">Little Parliament</Link>
+                    <ul className='nav__links'>
+                        {routes}
+                    </ul>
+                </div>
+                <SocialLinks details={socialLinkDetails} />
+            </nav>
+        </div>
     )
 }

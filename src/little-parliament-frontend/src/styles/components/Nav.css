@@ -1,0 +1,48 @@
+.nav-container {
+    display: none;
+}
+
+@media only screen and (min-width: 991px) {
+    .nav-container {
+        display: block;
+        width: 100%;
+        background-color: var(--white);
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        max-width: calc(1248px + (var(--padding ) * 2));
+    }
+    .nav-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav .nav__title {
+        margin-right: 2rem;
+    }
+
+    .nav__links {
+        display: flex;
+    }
+
+    .nav__link {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .nav__link a {
+        color: var(--black);
+    }
+
+    .nav__link + .nav__link {
+        margin-left: 2rem;
+    }
+    
+    .nav__logo {
+        margin-right: 2rem;
+        height: 4rem;
+    }
+}

@@ -1,0 +1,53 @@
+.hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 526px;
+    margin-bottom: 6rem;
+    width: 100%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    width: 100%;
+    max-width: calc(1248px + (var(--padding ) * 2));
+}
+
+.hero__title {
+    font-family: var(--fancy-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero__description {
+    font-size: 1.5rem;
+    color: var(--brand-light-grey-1);
+    width: 100%;
+    text-align: center;
+}
+
+.hero__media {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+@media only screen and (min-width: 768px) {
+    .hero__title {
+        text-align: left;
+    }
+
+    .hero__description {
+        text-align: left;
+        max-width: 50%;
+    }
+}
