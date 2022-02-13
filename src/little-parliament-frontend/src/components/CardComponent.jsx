@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import "../styles/components/CardComponent.css"
 
 export default function CardComponent(props) {
-    const {details, loading} = props
-    console.log(details)
+  const {details, loading} = props
   return (
     <div className={loading ? 'card-component loading' : 'card-component'}>
         <img src={details.image} alt={details.title} className="card-component__image" />
