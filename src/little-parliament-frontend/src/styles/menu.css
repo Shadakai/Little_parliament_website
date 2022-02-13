@@ -110,4 +110,14 @@ h1 {
 
 .itemDetail {
   height: 100vh;
+  margin: 1em;
+}
+
+.itemImage {
+  height: 50vh;
+}
+
+.itemTitle {  
+  font-family: var(--fancy-font);
+  font-size: 4em;
 }

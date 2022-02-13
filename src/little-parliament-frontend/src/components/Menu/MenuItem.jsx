@@ -7,11 +7,11 @@ export default function MenuItem( {item} ) {
         <Link to={{ pathname:  link }} state={{item}} >
         <div className="item">
         <Card >
-            <CardMedia className="item-image" image={item.image} title={item.name} />
+            <CardMedia className="item-image" image={item.image} title={item.title} />
          <CardContent>
             <div>
                 <Typography gutterBottom variant="h5" component="h2">
-                    {item.name}
+                    {item.title}
                 </Typography>
                 <Typography gutterBottom variant="h5" component="h2">
                     ${item.price}
