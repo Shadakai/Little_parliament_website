@@ -428,7 +428,7 @@ Menu item detail page added, products added, footer added
 
 "I dont like how the menu items group together, they seem kinda random and not apart of the same group"
 
-#### Steps taken after second round
+#### Steps taken after third round
 - none 
 
 ## Production testing round 1
@@ -451,5 +451,11 @@ Menu item detail page added, products added, footer added
 
 ### Carly Ladas(Client)
 
-"Hello Axel, Thanks for doing this for me. I've had play with it and theres a few things that I would love if they got fixed. The buttons on the home screen dont actually do anything... 
+"Hello Axel, Thanks for doing this for me. I've had play with it and theres a few things that I would love if they got fixed. The buttons on the home screen dont actually do anything... I would also love it if we could connect the website to the instagram page, I also had trouble finding how to get to the admin panel you were talking about is taht in here?"
 
+#### Steps taken after fourth round
+- Fixed index buttons 
+- Fixed menu button auto scroll 
+- Added more word spacing in products
+- Added instagram integration to backlog 
+- Made admin panel easier to find
