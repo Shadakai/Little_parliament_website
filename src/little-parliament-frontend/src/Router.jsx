@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route, useNavigate } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Menu from "./pages/Menu"
@@ -9,7 +9,7 @@ import ProductItem from "./pages/ProductItem"
 import Admin from "./pages/Admin"
 
 function Router() {
-
+  const Navigate = useNavigate()
   const route_details = [
     {
       path: '/',
@@ -48,17 +48,17 @@ function Router() {
     },
     {
       path: "*",
-      element: <Navigate to="/" replace />,
+      element: <Navigate to="/" />,
       exact_path: false,
     }
   ]
 
   const routes = route_details.map((route, index) =>
-    route.exact_path ? <Route exact path={route.path} element={route.element} key={index}/> : <Route path={route.path} element={route.element} key={index}/>
+    route.exact_path ? <Route exact path={route.path} element={route.element} key={index} /> : <Route path={route.path} element={route.element} key={index} />
   )
   return (
     <Routes>
-       {routes}
+      {routes}
     </Routes>
   )
 }
