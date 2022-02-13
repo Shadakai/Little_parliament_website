@@ -47,7 +47,7 @@ function Router() {
       exact_path: false,
     },
     {
-      path: "*",
+      path: "/*",
       element: <Navigate to="/" />,
       exact_path: false,
     }
