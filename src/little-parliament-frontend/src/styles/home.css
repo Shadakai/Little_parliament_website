@@ -38,6 +38,46 @@
   font-family: ravensara_sansmedium;
 }
 
+@media only screen and (max-width: 700px) {
+  .hero-text {
+    font-size: 2em
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-text {
+    font-size: 1.5em
+  }
+  .welcome-image {
+    height: 70vh;
+  }
+  
+  .coffee-image {
+    height: 50vh;
+  }
+  
+  .food-image {
+    height: 70vh;
+  }
+  
+  .our-store-image {
+    height: 70vh;
+  }
+  .column {
+    width: 40%;
+  }
+  .title {
+    font-size: 1em;
+  }
+  
+  .info {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.5em;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+}
+
 /* Hero containers */
 
 .section {
