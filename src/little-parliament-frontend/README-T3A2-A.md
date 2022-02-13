@@ -452,3 +452,4 @@ Menu item detail page added, products added, footer added
 ### Carly Ladas(Client)
 
 "Hello Axel, Thanks for doing this for me. I've had play with it and theres a few things that I would love if they got fixed. The buttons on the home screen dont actually do anything... 
+
