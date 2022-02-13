@@ -8,7 +8,10 @@ import Products from "./pages/Products"
 import ProductItem from "./pages/ProductItem"
 import Admin from "./pages/Admin"
 
+// Importing all the necessary components that we want to render for each route.
+
 function Router() {
+  // Created an array of objects to easily add additional routes if required
   const route_details = [
     {
       path: '/',
@@ -52,6 +55,7 @@ function Router() {
     }
   ]
 
+  // Mapping over the route_details array and conditionally creating a route passed off the value of exact_path.
   const routes = route_details.map((route, index) =>
     route.exact_path ? <Route exact path={route.path} element={route.element} key={index} /> : <Route path={route.path} element={route.element} key={index} />
   )

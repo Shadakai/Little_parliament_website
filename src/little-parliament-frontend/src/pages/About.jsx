@@ -3,6 +3,7 @@ import SplitLayout from '../components/SplitLayout';
 import HeroSection from '../components/HeroSection'
 
 export default function About() {
+  // Array of objects which are being passed to the SplitLayout component
   const about_details = [
     {
       title: "Our Story",
@@ -55,6 +56,7 @@ export default function About() {
     }
   }
 
+  // Mapping over about_details array, and if the index is odd we are passing through tru to the reverse prop.
   const details = about_details.map((detail, index) => {
     return (
       <SplitLayout details={detail} reverse={index % 2 != 0 ? true : false} key={index} />

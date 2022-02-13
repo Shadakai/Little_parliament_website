@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../styles/components/CardComponent.css"
-
+// Component used to display product information. The component accepts an object of the products details as props
 export default function CardComponent(props) {
   const { details } = props
   return (

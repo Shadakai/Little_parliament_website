@@ -2,7 +2,7 @@ import React from 'react'
 import SocialLinks from './SocialLinks'
 import { socialLinkDetails } from '../utilities/RouteDetails'
 import "../styles/components/Footer.css"
-
+// Simple footer component. We are destructing the RouteDetails to specifically get the socialLinkDetails array and passing it to the SocialLinks components as props.
 export default function Footer() {
   return (
     <div className='footer-container'>
