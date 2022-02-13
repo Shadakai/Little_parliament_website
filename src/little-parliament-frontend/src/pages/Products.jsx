@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import CardComponent from '../components/CardComponent';
 import "../styles/Products.css"
+import HeroSection from "../components/HeroSection"
 
 export default function Products() {
   const [loading, setLoading] = useState(true)
@@ -16,8 +17,17 @@ export default function Products() {
   const products = productData.map((product, index) => {
     return <CardComponent  details={product.product} loading={loading} key={index}/> 
   })
+
+  const heroDetails = {
+    title: "Our Store",
+    media: {
+      type: 'image',
+      src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/our_store_hero.JPG'
+    }
+  }
   return (
       <div className="container products">
+        <HeroSection details={heroDetails}/>
         {products}
       </div>
   )
