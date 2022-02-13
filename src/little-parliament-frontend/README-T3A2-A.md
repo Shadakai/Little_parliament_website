@@ -459,3 +459,7 @@ Menu item detail page added, products added, footer added
 - Added more word spacing in products
 - Added instagram integration to backlog 
 - Made admin panel easier to find
+
+
+# Admin 
+To access the admin panel there is a 5px by 5px box on the left side of the L of "Little Parliament" on the nav bar. Clicking this invisible box will take you to an admin login panel where you must log in with. sam@gmail.com and password.

@@ -43,5 +43,7 @@ input:focus {
 /* Admin Panel */
 
 .adminpanel {
-  flex: 4;
+  position: relative;
+  height: 500px;
+  width: 100%;
 }
