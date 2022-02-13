@@ -1,0 +1,31 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 var(--padding);
+}
+
+@media only screen and (min-width: 768px) {
+    .products .card-component {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .products .card-component__title {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .products .card-component {
+        width: 30%;
+    }
+
+    .products .card-component__image {
+        min-height: 350px;
+    }
+
+    .products .card-component__title {
+        font-size: 1.5rem;
+    }
+}
