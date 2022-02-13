@@ -7,7 +7,7 @@ export default function About() {
   const about_details = [
     {
       title: "Our Story",
-      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto pariatur quas nostrum aspernatur molestias, magni nulla in ea natus vel a doloremque? At delectus cumque nisi dolores molestiae omnis architecto!",
+      description: "Crammed in the back of an old taxi, marlborough red fumes taint the humid sea air as we wind through the narrow backstreets of crete in the Greek Islands. 'Where the hell is he taking us?' Curiosity, hunger and a serious hankering for an iced glass of pine tree resin wine quickly overcame any fear or apprehension. Finally, we arrive. Small tables cloaked in blue and white checkered tablecloths fill the town square. Every seat occupied. The hum of conversation floods our ears as the locals - cigaretter in one hand, coffee in the other - talk politics, gossip and exchange the odd dirty joke. Fresh, simple, seasonal food comes out in piecemeal. No rush. 'What is this place' Micri Voulee. Translated into Micro Parliament. And so our spin on this slice of paradise was born; Little Parliament",
       image: {
         src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/sign1.PNG',
         alt: "Little Parliament Sign",
@@ -15,7 +15,7 @@ export default function About() {
     },
     {
       title: "Location",
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
+      description: 'We are located in the beautiful little town of Rainbow Beach, bring your surfboards and leave your worries behind and come visit us today!',
       image: {
         src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/Capture.PNG',
         alt: "Little Parliament Location"
@@ -23,7 +23,7 @@ export default function About() {
     },
     {
       title: 'Coffee',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
+      description: 'Would it be too presumptious to say we have the best coffee in Rainbow Beach? Maybe, but it is good! Locally sourced!',
       image: {
         src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/coffee.PNG',
         alt: "Coffee"
@@ -31,7 +31,7 @@ export default function About() {
     },
     {
       title: 'Food',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
+      description: 'Our food is all locally sourced and delicious, please check out our menu to browse all we offer!',
       image: {
         src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/food.PNG',
         alt: "Vegan Cheesecake"
@@ -39,7 +39,7 @@ export default function About() {
     },
     {
       title: 'Souvenirs',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores ea temporibus sunt distinctio! Praesentium recusandae totam assumenda sunt eius ullam fugit deserunt dolorum nobis? Iste veniam asperiores sapiente ipsum?',
+      description: "Why not take home a souvenir from this beautiful place? We have plenty to offer, please check out 'Our Store'",
       image: {
         src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/products.PNG',
         alt: "Products"
@@ -49,7 +49,7 @@ export default function About() {
 
   const heroDetails = {
     title: 'Our Story',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto sed, consectetur commodi quidem omnis? Repudiandae consectetur laborum quos numquam?',
+    description: "Crammed in the back of an old taxi, marlborough red fumes taint the humid sea air as we wind through the narrow backstreets of crete in the Greek Islands. 'Where the hell is he taking us?' Curiosity, hunger and a serious hankering for an iced glass of pine tree resin wine quickly overcame any fear or apprehension. Finally, we arrive. Small tables cloaked in blue and white checkered tablecloths fill the town square. Every seat occupied. The hum of conversation floods our ears as the locals - cigaretter in one hand, coffee in the other - talk politics, gossip and exchange the odd dirty joke. Fresh, simple, seasonal food comes out in piecemeal. No rush. 'What is this place' Micri Voulee. Translated into Micro Parliament. And so our spin on this slice of paradise was born; Little Parliament",
     media: {
       type: 'video',
       src: 'https://littleparliament-bucket.s3.ap-southeast-2.amazonaws.com/little-parliament-public-assets/about_us_hero.mp4'
