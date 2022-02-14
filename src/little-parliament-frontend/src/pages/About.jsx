@@ -48,7 +48,7 @@ export default function About() {
   ]
 
   const heroDetails = {
-    title: 'Our Story',
+    title: 'A little about us..',
     description: " ",
     media: {
       type: 'video',
